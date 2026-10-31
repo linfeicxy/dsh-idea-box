@@ -1,0 +1,57 @@
+{
+  "name": "dsh-idea-box",
+  "version": "0.3.0",
+  "private": false,
+  "description": "A small floating box in the DSH web UI: jot down a line or drop a screenshot, press Enter, and it is saved as a Markdown file in your workspace.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "naming.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "icon": "./icon.svg",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "notes",
+    "idea",
+    "markdown",
+    "screenshot"
+  ],
+  "license": "MIT",
+  "author": "linfeicxy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linfeicxy/dsh-idea-box.git"
+  },
+  "homepage": "https://github.com/linfeicxy/dsh-idea-box#readme",
+  "bugs": {
+    "url": "https://github.com/linfeicxy/dsh-idea-box/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    },
+    "manifestVersion": 1
+  }
+}

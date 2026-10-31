@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Idea Box",
+    "description": "A small round button in the interface: write a sentence, drop or paste a screenshot, press Enter, and it becomes a Markdown file with the images saved next to it. Files go under your current working directory by default, and the folder can be changed."
+  }
+}

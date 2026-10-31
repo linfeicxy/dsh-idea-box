@@ -1,0 +1,7 @@
+# dsh-idea-box —— DSH 灵感小窗
+#
+# 只挂一个 Host 半：它在本地 Web 服务上开 /dsh-idea-box/save 和 /dsh-idea-box/info 两个接口，
+# 界面那一半由 package.json 的 dsh.client 声明，宿主自动组装，这里不用写。
+- insert:
+    - id: dsh-idea-box
+      name: dsh-idea-box
